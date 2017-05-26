@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'css/main.css': 'sass/main.sass'
+					'css/style.css': 'sass/style.sass'
 				}
 			}
 		},
@@ -65,5 +65,5 @@ module.exports = function(grunt) {
 
 	// Default tasx(s).
 
-	grunt.registerTask('default', ['jshint', 'sass', 'imagemin', 'browserSync', 'watch']);
+	grunt.registerTask('default', ['sass', 'imagemin', 'jshint', 'browserSync', 'watch']);
 };
